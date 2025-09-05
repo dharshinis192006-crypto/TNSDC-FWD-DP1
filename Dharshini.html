@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>S. Dharshini | Portfolio</title>
+  <style>
+    /* Google Font */
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #4facfe, #00f2fe);
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    header {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: rgba(0, 0, 0, 0.2);
+      border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      letter-spacing: 2px;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+      opacity: 0.9;
+    }
+
+    section {
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #ffeaa7;
+    }
+
+    .about, .hobbies {
+      background: rgba(255, 255, 255, 0.1);
+      margin: 1.5rem auto;
+      padding: 2rem;
+      border-radius: 15px;
+      max-width: 800px;
+      backdrop-filter: blur(8px);
+      box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+      transition: transform 0.3s;
+    }
+
+    .about:hover, .hobbies:hover {
+      transform: scale(1.03);
+    }
+
+    .about p, .hobbies p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      background: rgba(0, 0, 0, 0.3);
+      font-size: 0.9rem;
+      margin-top: 2rem;
+    }
+
+    /* Button style */
+    .btn {
+      display: inline-block;
+      margin-top: 1.5rem;
+      padding: 0.8rem 1.5rem;
+      border-radius: 30px;
+      background: #ffeaa7;
+      color: #2d3436;
+      font-weight: bold;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #fab1a0;
+      transform: scale(1.1);
+    }
+
+    /* Animation */
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(-20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Hello, I'm S. Dharshini 👩🏻‍💻</h1>
+    <p>2nd Year B.Sc Computer Science Student</p>
+  </header>
+
+  <section>
+    <div class="about">
+      <h2>About Me</h2>
+      <p>
+        I am currently pursuing my Bachelor's degree in Computer Science at 
+        <strong>Arcot Sri Mahalakshmi Women's College, Villapakkam, Ranipet District</strong>.  
+        Passionate about learning new technologies and improving my skills every day.
+      </p>
+    </div>
+
+    <div class="hobbies">
+      <h2>My Hobby 🎶</h2>
+      <p>
+        I love listening to music — it helps me relax, refresh my mind, and stay motivated.
+      </p>
+      <a href="#" class="btn" onclick="showMessage()">Click Me</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 S. Dharshini | All Rights Reserved</p>
+  </footer>
+
+  <script>
+    function showMessage() {
+      alert("Keep enjoying your favorite music, Dharshini! 🎧✨");
+    }
+  </script>
+
+</body>
+</html>
